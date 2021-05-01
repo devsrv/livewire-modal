@@ -1,0 +1,44 @@
+{
+    "name": "devsrv/livewire-modal",
+    "description": "turn laravel livewire component into modal",
+    "keywords": [
+        "livewire-modal",
+        "Modal",
+        "Laravel",
+        "Livewire"
+    ],
+    "homepage": "https://github.com/devsrv/livewire-modal",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sourav Rakshit",
+            "email": "developer.srv1@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "livewire/livewire": "^2.0",
+        "illuminate/view": "^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "devsrv\\LivewireModal\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "devsrv\\LivewireModal\\LivewireModalServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
