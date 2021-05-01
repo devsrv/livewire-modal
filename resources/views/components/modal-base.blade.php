@@ -6,7 +6,7 @@
         <div class="modal-content">
             <div class="modal-header align-items-center">
                 <h5 class="modal-title" x-text="heading"></h5>
-                <template x-if="!ready"><span><x-livewiremodal-spinner class="ml-2" sm /></span></template>
+                <template x-if="!ready"><span><x-livewiremodal-spinner type="dark" class="ml-2" sm /></span></template>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div id="x--modal-body-wrapper">
