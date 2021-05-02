@@ -5,6 +5,8 @@
 
 Turn Laravel Livewire Component into Modal.
 
+<img src="https://staging.voyantcs.com/sourav/static/livewire-modal-sample.gif" width="520" />
+
 ## 🏷 Features
 - Modal triggerred by javascript i.e. opens instantly without waiting for livewire network round trip to finish ( no laggy feeling )
 - Skeleton loading indicator 
@@ -58,7 +60,7 @@ php artisan vendor:publish --provider="devsrv\LivewireModal\LivewireModalService
 
 ## 🧪 Usage
 #### <img src="https://laravel-livewire.com/favicon.ico" width="30" /> Create Livewire Component 
-No consideration required, create livewire component as usual. Use livewire's `mount` to handle parameters passed to the modal
+No consideration required, create livewire component as usual. Use livewire's `mount` to handle passed parameters
 
 #### 🚀 Open Modal
 
@@ -104,7 +106,7 @@ $this->dispatchBrowserEvent('open-x-modal', ['title' => 'My Modal', 'modal' => '
 > 💡 Modal size supports `sm` `lg` `xl`        *// completely optional*
 
 #### 🌈 Bonus
-you are free to put content in livewire view file in any structure, but the package provides an blade component for bootstrap modal which you can use as:
+you are free to put content in livewire view file in any structure, however the package provides an blade component for bootstrap modal which you can use as:
 
 ```html
 <x-livewiremodal-modal>
@@ -120,9 +122,9 @@ you are free to put content in livewire view file in any structure, but the pack
 </x-livewiremodal-modal>
 ```
 
-##### ✌🏼 Two reason to use this component
+##### ✌🏼 Two reasons to use this component
 
-🟢 a pretty line progress loading indicator which appears when livewire loading state changes
+🟢 a pretty line progress loading indicator which appears in the top when livewire loading state changes
 
 🟢 alert notification message which can be triggered by: 
 ```php 
