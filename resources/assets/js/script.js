@@ -21,7 +21,7 @@ function _livewireModal() {
     }
 }
 
-function _openModal(title, modal, size = null, params = []) {
+function _openModal(title, modal, params = [], size = null) {
     window.dispatchEvent(new CustomEvent("open-x-modal", {
         detail: {
             title: title,
