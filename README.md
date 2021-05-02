@@ -5,7 +5,7 @@
 
 Turn Laravel Livewire Component into Modal.
 
-<img src="https://staging.voyantcs.com/sourav/static/livewire-modal-sample-alt.gif" width="520" />
+<img src="https://staging.voyantcs.com/sourav/static/livewire-modal-sample-alt.gif" width="720" />
 
 ## 🏷 Features
 - Modal triggered by javascript i.e. opens instantly without waiting for livewire network round trip to finish ( no laggy feeling )
