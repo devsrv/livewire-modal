@@ -8,12 +8,12 @@ Turn Laravel Livewire Component into Modal.
 <img src="https://staging.voyantcs.com/sourav/static/livewire-modal-sample.gif" width="520" />
 
 ## 🏷 Features
-- Modal triggerred by javascript i.e. opens instantly without waiting for livewire network round trip to finish ( no laggy feeling )
+- Modal triggered by javascript i.e. opens instantly without waiting for livewire network round trip to finish ( no laggy feeling )
 - Skeleton loading indicator 
 - Support alert message ( info, warning, success, danger ) 
-- Trigger from Alpine Component / Vanilla Javascript / Livewire Class Component
+- Trigger from Alpine Component / Vanilla JS / Livewire Class Component
 
-## Requirements
+## 🧾 Requirements
 
 | **Bootstrap**  | < 5 | *bs5 & no bootstrap support coming soon*
 |---|---|---|
@@ -58,11 +58,11 @@ php artisan vendor:publish --provider="devsrv\LivewireModal\LivewireModalService
 ```
 
 
-## 🧪 Usage
-#### <img src="https://laravel-livewire.com/favicon.ico" width="30" /> Create Livewire Component 
+## ⚗️ Usage
+### <img src="https://laravel-livewire.com/favicon.ico" width="20" /> Create Livewire Component 
 No consideration required, create livewire component as usual. Use livewire's `mount` to handle passed parameters
 
-#### 🚀 Open Modal
+### ✨ Open Modal
 
 ###### ✔️ From Alpine Component
 ```html
@@ -105,7 +105,7 @@ $this->dispatchBrowserEvent('open-x-modal', ['title' => 'My Modal', 'modal' => '
 
 > 💡 Modal size supports `sm` `lg` `xl`        *// completely optional*
 
-#### 🌈 Bonus
+## 🌈 Bonus
 you are free to put content in livewire view file in any structure, however the package provides an blade component for bootstrap modal which you can use as:
 
 ```html
@@ -122,7 +122,7 @@ you are free to put content in livewire view file in any structure, however the 
 </x-livewiremodal-modal>
 ```
 
-##### ✌🏼 Two reasons to use this component
+#### ✌🏼 Two reasons to use this component
 
 🟢 a pretty line progress loading indicator which appears in the top when livewire loading state changes
 
