@@ -1,8 +1,8 @@
 <div {{ $attributes }}>
     <div class="modal-body bg-body">
-        @if(session()->has('livewire_notify'))
-        <x-livewiremodal-alertify show :type="session('livewire_notify')['type']">
-            {!! session('livewire_notify')['message'] !!}
+        @if(session()->has('alertify'))
+        <x-livewiremodal-alertify show :type="session('alertify')['type']">
+            {!! session('alertify')['message'] !!}
         </x-livewiremodal-alertify>
         @endif
 
