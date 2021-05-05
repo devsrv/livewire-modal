@@ -128,7 +128,7 @@ you are free to put content in livewire view file in any structure, however the 
 
 🟢 alert notification message which can be triggered by: 
 ```php 
-session()->flash('alertify', ['type' => 'danger', 'message' => '<strong>Hi !</strong>, i am an alert']);
+$this->info('<strong>Hi !</strong>, i am an alert');  // support `info` `warning` `success` `danger`
 ```
 
 
