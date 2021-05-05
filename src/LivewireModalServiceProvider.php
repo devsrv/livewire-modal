@@ -36,6 +36,12 @@ class LivewireModalServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../public/dist' => public_path('vendor/livewiremodal'),
         ], 'public');
+
+        collect(['info', 'warning', 'success', 'danger'])->each(fn($type) =>
+            \Livewire\Component::macro($type, fn ($msg) =>
+                session()->flash('alertify', ['type' => $type, 'message' => $msg])
+            )
+        );
     }
 
     /**
