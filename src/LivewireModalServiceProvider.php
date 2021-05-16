@@ -12,7 +12,6 @@ use devsrv\LivewireModal\Components\{
 };
 use devsrv\LivewireModal\Components\UI\{
     Modal,
-    Spinner,
     Alertify
 };
 
@@ -26,7 +25,6 @@ class LivewireModalServiceProvider extends ServiceProvider
 
         $this->loadViewComponentsAs('livewiremodal', [
             Base::class,
-            Spinner::class,
             Alertify::class,
             Modal::class,
             Trigger::class,
@@ -36,6 +34,10 @@ class LivewireModalServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../public/dist' => public_path('vendor/livewiremodal'),
         ], 'public');
+
+        $this->publishes([
+            __DIR__.'/../config/livewiremodal.php' => config_path('livewiremodal.php'),
+        ], 'config');
 
         collect(['info', 'warning', 'success', 'danger'])->each(fn($type) =>
             \Livewire\Component::macro($type, fn ($msg) =>
