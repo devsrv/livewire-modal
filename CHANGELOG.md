@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 - 2021-05-16
+
+### added
+- config publishable for bootstrap 4 | 5 theme
+
 ## 1.0.2 - 2021-05-05
 
 ## fixed

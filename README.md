@@ -15,9 +15,9 @@ Turn Laravel Livewire Component into Modal.
 
 ## 🧾 Requirements
 
-| **Bootstrap**  | < 5 | *bs5 & no bootstrap support coming soon*
+| **Bootstrap**  | 4 or 5 | *no bootstrap support coming soon*
 |---|---|---|
-| Jquery  |   | *soon to be removed* 
+| Jquery  |   | *for bootstrap 4 only* 
 |  Laravel | >= 7 |   |
 |  Livewire | >= 2.0  |   |
 |  Alpine JS |  |   |
@@ -50,6 +50,11 @@ composer require devsrv/livewire-modal
 php artisan vendor:publish --provider="devsrv\LivewireModal\LivewireModalServiceProvider" --tag=public
 ```
 
+#### Publish config
+```shell
+php artisan vendor:publish --provider="devsrv\LivewireModal\LivewireModalServiceProvider" --tag=config
+```
+> config support bootstrap theme: bs4 | bs5
  
 ### 📌 Updating
 > **Important:** when updating the package make sure to re-publish the assets with `--force` flag
