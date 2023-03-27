@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5 - 2023-03-27
+
+### added
+- PHP 8.2 & Laravel 10 support
+- 
 ## 1.0.4 - 2022-02-22
 
 ### added
