@@ -8,6 +8,10 @@ function _livewireModal() {
             function modalClose() {
                 Livewire.emitTo('base-wire-modal', 'closeModal');
                 this.ready = false;
+                $('#x-modal').removeClass('show');
+                $('body').removeClass('modal-open');
+                $('.modal-backdrop').remove();
+                $('#x-modal').modal('hide');
             }
             if(_livewiremodal.theme === 'bs5') {
                 document.getElementById('x-modal').addEventListener('hidden.bs.modal', (e) => modalClose());
